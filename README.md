@@ -6,15 +6,29 @@ The goal is to compare performance across providers. Originally the idea was to 
 
 # Experiment
 
-As an example job workload, I have chosen Grovers Search. I felt it sufficiently complex (gate operation wise) to demonstrate comparable differences in performance. I then target IonQ's simulator and Quantinuum's simulator and compare peformance. 
+As an example job workload, I have chosen Grovers Search. I felt it sufficiently complex (gate operation wise) to demonstrate comparable differences in performance. I then target IonQ's simulator (ionq.simulator) and Quantinuum's simulator (quantinuum.hqs-lt-s2-sim) and compare peformance. 
 
 # Results
 
 ## Reliability
 
-It seems that as far as potential targets, IonQ seems to be most reliable. Quantinuum offers some syntax checker targets which is nice, but ultimately the target hardware is frequently degraded or unavailable.
+### Targets
+
+It seems that as far as potential targets, IonQ seems to be most reliable. Quantinuum offers some syntax checker targets which is nice, but ultimately the target hardware is frequently degraded or unavailable. The queue time for IonQ's simulator is 2 seconds, while for Quantinuum it is 11019 seconds.
 
 ![](providers.png)
+
+### Output
+
+It's also interesting that the output from IonQ vs Quantinuum is quite different. The method of simulation is likely different, possibly such that there were trade-offs made on speed vs accuracy
+
+#### IonQ
+
+![](ionq-output.png)
+
+#### Quantinuum
+
+![](quantinuum-output.png)
 
 ## Speed
 
