@@ -6,13 +6,26 @@ The goal is to compare performance across providers. Originally the idea was to 
 
 # Experiment
 
-As an example job workload, I have chosen Grovers Search algorithm. I felt it sufficiently complex (gate operation wise) to demonstrate comparable differences in performance. I then target IonQ's simulator and Quantinuum's simulator and compare peformance. 
+As an example job workload, I have chosen Grovers Search. I felt it sufficiently complex (gate operation wise) to demonstrate comparable differences in performance. I then target IonQ's simulator and Quantinuum's simulator and compare peformance. 
 
 # Results
 
 ## Reliability
 
-It seems that as far as potential targets, IonQ seems to win out on reliability. Quantinuum offers some syntax checker targets which is nice, but ultimately the target hardware is mostly degraded or unavailable.
+It seems that as far as potential targets, IonQ seems to be most reliable. Quantinuum offers some syntax checker targets which is nice, but ultimately the target hardware is degraded or unavailable as of now, though today may just be an outlier.
 
 ![](providers.png)
 
+## Speed
+
+IonQ's execution time was less than 1 second.
+
+![](ionq-results.png)
+
+Quantinuum's execution time was 23 seconds.
+
+![](quantinuum-results.png)
+
+# Conclusion
+
+Unfortunate that I wasn't able to do a proper comparison between superconducting qubits vs trapped ion qubits, however it was still interesting to compare the providers simulator performance. On both performance and reliability it seems that IonQ is better. However, one nice feature of Quantinuum is the syntax checker targets, which IonQ does not provide. So we could say there's pros and cons of each provider.
