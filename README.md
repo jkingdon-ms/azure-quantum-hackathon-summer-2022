@@ -12,7 +12,7 @@ As an example job workload, I have chosen Grovers Search. I felt it sufficiently
 
 ## Reliability
 
-It seems that as far as potential targets, IonQ seems to be most reliable. Quantinuum offers some syntax checker targets which is nice, but ultimately the target hardware is frequenctly degraded or unavailable.
+It seems that as far as potential targets, IonQ seems to be most reliable. Quantinuum offers some syntax checker targets which is nice, but ultimately the target hardware is frequently degraded or unavailable.
 
 ![](providers.png)
 
